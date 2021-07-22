@@ -14,3 +14,17 @@ body{
 .nav-link{
     color: white;
 }
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    position: block;
+    text-align: center;
+    line-height: 30px;
+    width: 500px;
+}
+
+.text{
+    color: white;
+}

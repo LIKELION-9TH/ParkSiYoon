@@ -6,6 +6,75 @@ body{
     color: white;
 }
 
-.info {
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    position: block;
+    color: white;
     text-align: center;
+    line-height: 30px;
+    width: 500px;
+}
+
+.text{
+    color: white;
+}
+
+
+.music{
+    /*music 가운데정렬 어케 하지*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li{ float: left; margin: 10px; text-align: center;}
+
+.album-cover{
+    width: 200px;
+    height: 200px;
+
+}
+
+.album-info{
+    color: white;
+    padding: 10px;
+}
+
+.album-artist{
+    font-size: 12px;
+}
+
+.image1{
+    background-image: url(https://image.bugsm.co.kr/album/images/500/9483/948334.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image2{
+    background-image: url(https://image.bugsm.co.kr/album/images/500/9001/900112.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61zgD7c3YmL._AC_UL600_SR600,600_.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image4{
+    background-image: url(http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/927/220/80927220_1488503584944_1_600x600.JPG);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
 }
