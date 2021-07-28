@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from introduceapp import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('free/', views.free, name="free"),
     path('hobby/', views.hobby, name="hobby"),
     path('music/', views.music, name="music"),
-    path('pictures/', views.pictures, name="pictures"),
+    path('picture/', views.picture, name="picture"),
     path('place/', views.place, name="place"),
+    path('rollingpaper/', views.rollingpaper, name="rollingpaper"),
+    path('<str:id>', views.detail, name="detail"),
 ]
