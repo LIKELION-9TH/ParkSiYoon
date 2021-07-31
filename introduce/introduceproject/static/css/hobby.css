@@ -1,19 +1,19 @@
-*{
-    background-color: black;
+
+.img {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
 }
 
-body{
-    color: white;
+
+.content{
+    padding: 100px 50px;
 }
 
-.notnav{
-    padding: 10px 50px;
-}
-
-.menu{
+.menutitle{
     padding: 20px;
     font-size: 24px;
-
 }
 
 .music{
@@ -23,12 +23,12 @@ body{
     width: 100%;
 }
 
-ul{
+.music > ul{
     overflow: hidden;
     list-style-type: none;
 }
 
-li{ float: left; margin: 10px; text-align: center;}
+.music > li{ float: left; margin: 10px; text-align: center;}
 
 .album-cover{
     width: 200px;
@@ -37,7 +37,7 @@ li{ float: left; margin: 10px; text-align: center;}
 }
 
 .album-info{
-    color: white;
+
     padding: 10px;
 }
 

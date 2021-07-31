@@ -1,32 +1,22 @@
-*{
-    background-color: black;
-}
 
-body{
-    color: white;
-}
 
 
 .content{
+    padding: 10px 50px;
+}
+
+.menutitle{
+    padding: 20px;
+    font-size: 24px;
+}
+
+.musicbox{
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
-    position: block;
-    color: white;
+    position: float;
     text-align: center;
-    line-height: 30px;
-    width: 500px;
-}
 
-.text{
-    color: white;
-}
-
-
-.music{
-    /*music 가운데정렬 어케 하지*/
-    margin: 0 auto;
-    width: 100%;
 }
 
 ul{
@@ -43,7 +33,7 @@ li{ float: left; margin: 10px; text-align: center;}
 }
 
 .album-info{
-    color: white;
+
     padding: 10px;
 }
 

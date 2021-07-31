@@ -11,35 +11,128 @@
     <link rel="stylesheet" href="{% static '../static/css/picture.css'%}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picture</title>
+
+    <style>
+
+        
+      @font-face {
+          font-family: 'Pretendard-Regular';
+          src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      body{
+        font-family: 'Pretendard-Regular';
+      }
+
+    .content{
+        padding: 10px 50px;
+    }
+
+    .menutitle{
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    ul{
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    li{
+        float: left;
+        margin: 10px;
+        text-align: center;
+    }
+
+    </style>
 </head>
 
 <div class="content">
 
   <div class="menutitle">
-    갤러리
-    <hr style="width: 100%; height: 3px;">
+    여름이었다...
+    <hr style="height: 3px;">
   </div>
 
 
     
-    <div class="album">
-        <table border="solid 2px white"; width="800px"; height="400px"; align="center">
-            <tr align="center"; background-color="white">
-                <td height="50px">사진1</td>
-                <td height="50px">사진2</td>
-            </tr>
-            <tr>
-                <td><img src=""></td>
-                <td><img src=""></td>
-            </tr>
-        </table>
-    </div>
 
+  <div class="picturebox">
+    <ul>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture2.jpg'%}" width="200">
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture1.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture3.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture4.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture5.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture6.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture7.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture8.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="album-item">
+                <div class="album-cover">
+                    <img src="{% static '../static/images/picture9.jpg'%}" width="200">
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 
     
-
-    hello
 
 {% endblock %}
 

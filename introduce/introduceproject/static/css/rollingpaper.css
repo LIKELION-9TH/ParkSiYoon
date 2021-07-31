@@ -1,18 +1,27 @@
-*{
-    background-color: black;
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
-body{
-    background-color: black;
-}
-
-.notnav{
-    padding: 10px 50px;
+.content{
+    padding: 10px 30px;
 }
 
 
-.menu{
-    padding: 20px;
+.menutitle{
+    padding: 10px;
     font-size: 24px;
+}
 
+
+.write{
+    padding: 10px;
+    text-decoration: none;
+    float: right;
+}
+
+.rollingpaperbody{
+    padding: 10px;
+    font-size: 16px;
 }

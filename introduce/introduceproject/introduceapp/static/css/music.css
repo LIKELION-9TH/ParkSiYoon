@@ -1,6 +1,5 @@
 
 
-
 .content{
     padding: 10px 50px;
 }
@@ -16,7 +15,6 @@
     margin-right: auto;
     position: float;
     text-align: center;
-
 }
 
 ul{
@@ -33,7 +31,6 @@ li{ float: left; margin: 10px; text-align: center;}
 }
 
 .album-info{
-
     padding: 10px;
 }
 
@@ -42,28 +39,24 @@ li{ float: left; margin: 10px; text-align: center;}
 }
 
 .image1{
-    background-image: url(https://image.bugsm.co.kr/album/images/500/9483/948334.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
 }
 
 .image2{
-    background-image: url(https://image.bugsm.co.kr/album/images/500/9001/900112.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
 }
 
 .image3{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61zgD7c3YmL._AC_UL600_SR600,600_.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
 }
 
 .image4{
-    background-image: url(http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/927/220/80927220_1488503584944_1_600x600.JPG);
     background-repeat: none;
     background-size: cover;
     background-position: center;

@@ -10,27 +10,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{% static '../static/css/new.css'%}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby</title>
+    <title>New</title>
+
+    <style>
+
+      
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+  
+        body{
+          font-family: 'Pretendard-Regular';
+        }
+      </style>
 </head>
 
 
 <div class="content">
 
-        <div class="menu">
+        <div class="menutitle">
             시윤이한테 할 말 있는 사람
-            <hr style="width: 800px; height: 3px;">
+            <hr style="height: 3px;">
         </div>
 
-        <div class="form">
+        <div class="form" style="display: flex; margin-left: auto; margin-right: auto;">
             <form action="{% url 'create'%}" method="post">
                 {%csrf_token%}
 
-                <br>제목<br><input type="text" name="title"><br>
-                작성자<br><input type="text" name="writer"><br>
-                본문<br><textarea name="body" id="" cols="30" rows="10"></textarea><br>
-                <button type="submit">submit</button>
-
-
+                <br>제목 <input type="text" name="title"> 
+                 작성자 <input type="text" name="writer"><br>
+                <br><textarea name="body" id="" cols="100" rows="10" ></textarea><br>
+                <br><button type="submit" style="border: 0; outline: none; display: flex; margin-left: auto; margin-right: auto;"><img src="{% static '../static/images/button5.png'%}" width="50"></button>
 
 
             </form>
@@ -42,7 +55,7 @@
             <h3>{{rollingpaper_contents.title}}</h3>
             {{rollingpaper_contents.writer}}<br>
             {{rollingpaper_contents.date}}<br>
-            {{rollingpaper_contents.body}}<a href="{%url 'rollingpaper' %}" style="text-decoration: none; color: black;">prev</a>
+            {{rollingpaper_contents.body}}<a href="{%url 'rollingpaper' %}" style="text-decoration: none; color: black;">이전</a>
         </div>
 
 

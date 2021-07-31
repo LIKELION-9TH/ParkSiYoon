@@ -10,7 +10,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{% static '../static/css/detail.css'%}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby</title>
+    <title>Detail</title>
+
+    <style>
+
+      
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+  
+        body{
+          font-family: 'Pretendard-Regular';
+        }
+      </style>
 </head>
 
 
@@ -18,20 +33,22 @@
 
         <div class="menutitle">
             시윤이한테 할 말 있는 사람
-            <hr style="width: 800px; height: 3px;">
+            <hr style="height: 3px;">
         </div>
 
         <div class="rollingpaperbody">
             <h3>{{rollingpaper_contents.title}}</h3>
-            {{rollingpaper_contents.writer}}<br>
-            {{rollingpaper_contents.date}}<br>
-            {{rollingpaper_contents.body}}<br>
-            <br><a href="{%url 'rollingpaper' %}">prev</a>
+            {{rollingpaper_contents.writer}} | {{rollingpaper_contents.date}}<hr>
+            {{rollingpaper_contents.body}}<hr>
+            <br>
+        </div>
+        
+        <div class="detailbutton" style="text-align: center;">
+            <a href="{%url 'rollingpaper' %}">이전 </a><br>
+            <a href="{% url 'edit'% rollingpaper_contents.id}">수정하기</a><br>
+            <a href="{% url 'delete' rollingpaper_contents.id%}">삭제하기</a>
         </div>
 
-        <a href="{% url 'edit'% rollingpaper_contents.id}">수정하기</a><br>
-        
-        <a href="{% url 'delete' rollingpaper_contents.id%}">삭제하기</a>
 
 
 

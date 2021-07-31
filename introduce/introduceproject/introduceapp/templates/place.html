@@ -11,6 +11,51 @@
     <link rel="stylesheet" href="{% static '../static/css/place.css'%}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place</title>
+
+    <style>
+
+        
+      @font-face {
+          font-family: 'Pretendard-Regular';
+          src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      body{
+        font-family: 'Pretendard-Regular';
+      }
+
+        .content{
+            padding: 10px 50px;
+        }
+    
+        .menutitle{
+            padding: 20px;
+            font-size: 24px;
+        }
+    
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+        }
+    
+        li{
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        
+        .album-info{
+            padding: 10px;
+        }
+
+        .album-artist{
+            font-size: 12px;
+        }
+
+        </style>
 </head>
 
 
@@ -19,69 +64,108 @@
     <div class="content" >
 
         <div class="menutitle">
-            <h3>제발 한 번만 가봐</h3>
-            <hr style="width: 100%; height: 3px;">
+            맞아요... 저 스윙스예요...
+            <hr style="height: 3px;">
+          </div>
+        
+        <div class="picturebox">
+            <ul>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place1.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">인도이웃</p>
+                            <p class="album-artist">서울 성북구 보문로34가길 2</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place2.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">도쿄커틀릿</p>
+                            <p class="album-artist">서울 성북구 동소문로22길 57-1</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place3.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">혼가츠</p>
+                            <p class="album-artist">서울 마포구 와우산로21길 36-6</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place4.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">하루돈까스</p>
+                            <p class="album-artist">서울 서대문구 연세로7안길 16-3</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place5.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">카와카츠</p>
+                            <p class="album-artist">서울 마포구 동교로 126</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place6.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">낙성대돈까스</p>
+                            <p class="album-artist">서울 관악구 인헌길 15</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place7.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">수수하지만굉장해</p>
+                            <p class="album-artist">부산 부산진구 서전로68번길 98</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="album-item">
+                        <div class="album-cover">
+                            <img src="{% static '../static/images/place8.jpg'%}" width="200">
+                        </div>
+                        <div class="album-info">
+                            <p class="album-title">청담 일품한식</p>
+                            <p class="album-artist">부산 부산진구 중앙대로692번길 45</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
         </div>
-
-        <div class="menutitle">
-            <h3>방방곡곡</h3>
-            <hr style="width: 100%; height: 3px;">
-        </div>
-
-        <div class="menutitle">
-            <h3>맞아요... 저 스윙스예요</h3>
-            <hr style="width: 100%; height: 3px;">
-
-            <div class="placecon" style="display: block; margin-left: auto; margin-right: auto;">
-
-                <div class="image" style="display: flex;">
-                <img src="{% static 'images/place1.jpg'%}" width="250">
-                </div>
-                <div class="info">
-                <b>인도이웃</b><br>
-                서울 성북구 보문로34가길 2<br>
-                ★★★★☆
-                </div>
-            </div>
-
-            <div class="placecon" style="display: block; margin-left: auto; margin-right: auto;">
-    
-                <div class="image" style="display: flex;">
-                    <img src="{% static 'images/place2.jpg'%}" width="250">
-                </div>
-                <div class="info">
-                    <b>도쿄커틀릿</b><br>
-                    서울 성북구 동소문로22길 57-1<br>
-                    ★★★★☆
-                </div>
-            </div>
-            
-                <div class="image" style="display: flex;">
-                    <img src="{% static 'images/place3.jpg'%}" width="250">
-                </div>
-                <div class="info">
-                    <b>혼가츠</b><br>
-                    서울 마포구 와우산로21길 36-6<br>
-                    ★★★★☆
-                </div>
-
-                <div class="image" style="display: flex;">
-                    <img src="{% static 'images/place4.jpg'%}" width="250">
-                </div>
-                <div class="info">
-                    <b>하루돈까스</b><br>
-                    서울 서대문구 연세로7안길 16-3<br>
-                    ★★★★☆
-                </div>
-
-
-
-
-
-        </div>
-
-
-
+        
+  
 
     </div>
 

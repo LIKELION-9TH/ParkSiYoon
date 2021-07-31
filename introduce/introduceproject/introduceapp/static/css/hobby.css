@@ -1,6 +1,14 @@
 
+.img {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
 .content{
-    padding: 10px 50px;
+    padding: 100px 50px;
 }
 
 .menutitle{
