@@ -27,5 +27,5 @@ urlpatterns = [
     path('picture/', picture, name="picture"),
     path('place/', place, name="place"),
     path('rollingpaper/', rollingpaper, name="rollingpaper"),
-    path('introduceapp/', include('introduceapp.urls')),
+    path('rollingpaper/', include('introduceapp.urls')),
 ]
