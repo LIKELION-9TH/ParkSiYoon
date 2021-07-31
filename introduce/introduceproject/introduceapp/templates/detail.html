@@ -25,20 +25,48 @@
         body{
           font-family: 'Pretendard-Regular';
         }
+
+        h6{
+            color: gray;
+        }
+
+        
+        .content{
+            padding: 20px 50px;
+        }
+
+
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        li{
+            float: left;
+            margin: 10px;
+            text-align: center;
+        }
+
+        h4{
+          float: left;
+        }
+
+        img{
+          float: right;
+          margin-bottom: 10px;
+        }
+        
       </style>
 </head>
 
 
     <div class="content">
 
-        <div class="menutitle">
-            시윤이한테 할 말 있는 사람
-            <hr style="height: 3px;">
-        </div>
+
 
         <div class="rollingpaperbody">
             <h3>{{rollingpaper_contents.title}}</h3>
-            {{rollingpaper_contents.writer}} | {{rollingpaper_contents.date}}<hr>
+            <h6>{{rollingpaper_contents.writer}} | {{rollingpaper_contents.date}}</h6><hr>
             {{rollingpaper_contents.body}}<hr>
             <br>
         </div>
