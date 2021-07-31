@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static '../static/css/edit.css'%}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+</head>
+
+
+    <div class="content">
+
+        <div class="menu">
+            시윤이한테 할 말 있는 사람
+            <hr style="width: 800px; height: 3px;">
+        </div>
+
+        <div class="form">
+            <form action="{% url 'update' rollingpaper_contents.id%}" method="post">
+                {%csrf_token%}
+
+                <br>제목<br><input type="text" name="title" value="{{rollingpaper_contents.title}}"><br>
+                작성자<br><input type="text" name="writer" value="{{rollingpaper_contents.writer}}"><br>
+                본문<br><textarea name="body" id="" cols="30" rows="10">{{rollingpaper_contents.body}}</textarea><br>
+                <button type="submit">submit</button>
+
+
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}
+
+
+</html>

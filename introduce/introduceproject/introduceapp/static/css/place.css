@@ -1,19 +1,14 @@
-*{
-    background-color: black;
-}
 
-body{
-    color: white;
-}
-
-
-.notnav{
+.content{
     padding: 10px 50px;
 }
 
 
-.menu{
+.menutitle{
     padding: 20px;
-    font-size: 24px;
 
+}
+
+h3{
+    font-size: 20px;
 }

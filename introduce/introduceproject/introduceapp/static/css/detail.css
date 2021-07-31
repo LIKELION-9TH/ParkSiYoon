@@ -1,18 +1,15 @@
-*{
-    background-color: black;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-body{
-    background-color: black;
-}
-
-.notnav{
+.content{
     padding: 10px 50px;
 }
 
 
-.menu{
-    padding: 20px;
+.menutitle{
+
     font-size: 24px;
 
 }

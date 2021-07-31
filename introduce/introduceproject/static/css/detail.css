@@ -1,0 +1,18 @@
+*{
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
+
+.notnav{
+    padding: 10px 50px;
+}
+
+
+.menu{
+    padding: 20px;
+    font-size: 24px;
+
+}

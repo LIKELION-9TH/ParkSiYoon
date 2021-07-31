@@ -1,0 +1,74 @@
+*{
+    background-color: black;
+}
+
+body{
+    color: white;
+}
+
+.notnav{
+    padding: 10px 50px;
+}
+
+.menu{
+    padding: 20px;
+    font-size: 24px;
+
+}
+
+.music{
+    /*music 가운데정렬 어케 하지*/
+    margin: 0 auto;
+    position: flex;
+    width: 100%;
+}
+
+ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li{ float: left; margin: 10px; text-align: center;}
+
+.album-cover{
+    width: 200px;
+    height: 200px;
+
+}
+
+.album-info{
+    color: white;
+    padding: 10px;
+}
+
+.album-artist{
+    font-size: 12px;
+}
+
+.image1{
+    background-image: url(https://postfiles.pstatic.net/MjAxODA2MTBfMjEx/MDAxNTI4NTc2NzI3Nzg4.WrLYTt1zw-_wKJZF37z8AG09YQXyPBMxOc3wOM1e3wIg.HpXaKXA4riYVAReZvog3vzvGVUyZbzXsv5MhautQGVsg.JPEG.ji1ss__/180609.jpg?type=w773);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image2{
+    background-image: url(https://image.bugsm.co.kr/album/images/500/9001/900112.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61zgD7c3YmL._AC_UL600_SR600,600_.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.image4{
+    background-image: url(http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/927/220/80927220_1488503584944_1_600x600.JPG);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
